@@ -1,0 +1,10 @@
+package in.ashokit.beans;
+
+public class Mobile {
+
+	private Integer id;
+	private String name;
+	private String color;
+	private String imeiNum;
+	
+}

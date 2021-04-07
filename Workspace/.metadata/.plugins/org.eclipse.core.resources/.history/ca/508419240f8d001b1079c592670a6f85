@@ -1,0 +1,13 @@
+package in.ashokit.bean;
+
+public class HtmlMsgFormatter implements IMsgFormatter {
+
+	public HtmlMsgFormatter() {
+		System.out.println("XmlMsgFormatter:: Constructor");
+	}
+	
+	public String format(String msg) {
+		String formattedMsg = "<html>" +msg+ "</html>";
+		return msg;
+	}
+}

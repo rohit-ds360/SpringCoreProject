@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="address" class="in.ashokit.beans.Address">
+
+		<property name="city" value="Balasore" />
+		<property name="state" value="Odisha" />
+		<property name="country" value="India" />
+
+	</bean>
+
+	<bean id="person" class="in.ashokit.beans.Person">
+
+		<property name="personId" value="101" />
+		<property name="personName" value="Rohit" />
+		<property name="addr" ref="address" />
+
+	</bean>
+
+</beans>

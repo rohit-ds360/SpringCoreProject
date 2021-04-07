@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sm" class="in.ashokit.beans.Meeting">
+		<property name="meetingName" value="Scrum Meeting"></property>
+		<property name="participants">
+			<list>
+				<value>Rohit</value>
+				<value>Satya</value>
+				<value>Panda</value>
+				<value>Shyam</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="fm" class="in.ashokit.beans.Meeting" parent="sm">
+		<property name="meetingName" value="Functional Meeting"></property>
+		<property name="participants">
+			<list merge="true">
+				<value>Steve</value>
+				<value>Ashok</value>
+				<value>Charles</value>
+				<value>John</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="tm" class="in.ashokit.beans.Meeting" parent="sm">
+		<property name="meetingName" value="Triage Meeting"></property>
+		<property name="participants">
+			<list merge="true">
+				<value>Hati</value>
+				<value>Pimpudi</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>

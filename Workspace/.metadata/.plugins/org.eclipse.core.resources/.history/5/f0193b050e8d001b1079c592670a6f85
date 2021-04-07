@@ -1,0 +1,17 @@
+package in.ashokit.bean;
+
+public class MessageWriter {
+
+	private IMsgFormatter formatter;
+	
+	public MessageWriter(IMsgFormatter formatter) {
+		this.formatter = formatter;
+	}
+
+	public void formatMsg(String msg) {
+		
+		String formattedMsg = formatter.format(msg);
+		
+		System.out.println("formattedMsg :: "+formattedMsg);
+	}
+}

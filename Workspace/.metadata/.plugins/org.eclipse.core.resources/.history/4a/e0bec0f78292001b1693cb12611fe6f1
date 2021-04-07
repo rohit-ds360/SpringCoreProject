@@ -1,0 +1,14 @@
+package in.ashokit.model;
+
+import java.util.Date;
+
+
+public class PlanInfo {
+
+	private Integer planId;
+	private String planName;
+	private Date planStartDate;
+	private Date planEndDate;
+	private String planDenailReason;
+	private Double benefitAmt;
+}

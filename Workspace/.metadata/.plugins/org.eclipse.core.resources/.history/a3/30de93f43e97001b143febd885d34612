@@ -1,0 +1,12 @@
+package in.ashokit.beans;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public class Meeting {
+
+	private String meetingName;
+	private List<String> participants;
+}

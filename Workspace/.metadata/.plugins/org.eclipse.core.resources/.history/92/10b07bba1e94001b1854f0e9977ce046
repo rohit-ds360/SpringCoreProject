@@ -1,0 +1,53 @@
+package in.ashokit.beans;
+
+public class Mobile {
+	
+	
+
+	public Mobile() {
+		System.out.println("Constructor executed");
+	}
+
+	private Integer id;
+	private String name;
+	private String color;
+	private String imeiNum;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getImeiNum() {
+		return imeiNum;
+	}
+
+	public void setImeiNum(String imeiNum) {
+		this.imeiNum = imeiNum;
+	}
+
+	@Override
+	public String toString() {
+		return "Mobile [id=" + id + ", name=" + name + ", color=" + color + ", imeiNum=" + imeiNum + "]";
+	}
+
+}

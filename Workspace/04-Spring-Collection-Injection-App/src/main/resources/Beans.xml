@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="company" class="in.ashokit.beans.Company">
+
+		<property name="projects">
+			<list>
+				<value>IES</value>
+				<value>HIS</value>
+				<value>CTP</value>
+			</list>
+		</property>
+
+		<property name="managers">
+			<set>
+				<value>Mr. Ramesh</value>
+				<value>Mr. Suresh</value>
+			</set>
+		</property>
+
+		<property name="salaries">
+			<map>
+				<entry key="Mr. Ramesh" value="85000"></entry>
+				<entry key="Mr. Suresh" value="55000"></entry>
+			</map>
+		</property>
+
+		<property name="roles">
+			<props>
+				<prop key="Rohit">Developer</prop>
+				<prop key="Satya">Tester</prop>
+			</props>
+		</property>
+
+	</bean>
+
+
+</beans>

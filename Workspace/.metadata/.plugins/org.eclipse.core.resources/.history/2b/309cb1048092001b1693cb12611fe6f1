@@ -1,0 +1,8 @@
+package in.ashokit.model;
+
+import lombok.Setter;
+
+@Setter
+public class Book {
+
+}

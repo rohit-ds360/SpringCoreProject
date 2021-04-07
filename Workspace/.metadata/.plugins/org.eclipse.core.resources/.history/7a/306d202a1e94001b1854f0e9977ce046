@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="baseMobile" class="in.ashokit.beans.Mobile" >
+		<property name="name" value="IPhone"></property>
+		<property name="color" value="blue"></property>
+	</bean>
+
+	<bean id="mobile" class="in.ashokit.beans.Mobile">
+
+		<property name="id" value="101"></property>
+		<property name="name" value="IPhone"></property>
+		<property name="color" value="blue"></property>
+		<property name="imeiNum" value="125458798547"></property>
+
+	</bean>
+
+	<bean id="mobile1" class="in.ashokit.beans.Mobile" parent="baseMobile">
+
+		<property name="id" value="102"></property>
+		<property name="imeiNum" value="854862451254"></property>
+
+	</bean>
+	<bean id="mobile2" class="in.ashokit.beans.Mobile" parent="baseMobile">
+
+		<property name="id" value="103"></property>
+		<property name="imeiNum" value="854862451256"></property>
+
+	</bean>
+
+</beans>
